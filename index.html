@@ -8,20 +8,156 @@
         body {
             font-family: poppins;
             background: url("filmik.mp4");
+            
             height:100vh;
         }
+
+        .banner-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            }
+
+            .banner-text h2 {
+                text-align: center;
+                font-size: 60px;
+                margin: 0;
+                color:darkturquoise;
+                text-transform: uppercase;
+                }
+
+                .box {
+                    font-size: 45;
+                    font-weight: bold;
+                    opacity:0;
+                    color:red;
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    font-family: century gothic;
+                }
+
+                .b1 {
+                    animation: ani1 24s infinite;
+                }
+
+                .b2 {
+                    animation: ani2 24s infinite;
+                }
+
+                .b3 {
+                    animation: ani3 24s infinite;
+                }
+
+                .b4 {
+                    animation: ani4 24s infinite;
+                }
+
+                .b5 {
+                    animation: ani5 24s infinite;
+                }
+
+                @keyframes ani1 {
+                    0% {
+                        opacity: 0;
+                    }
+                    10% {
+                        opacity: 1;
+                    }
+                    20% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes ani2 {
+                    20% {
+                        opacity: 0;
+                    }
+                    30% {
+                        opacity: 1;
+                    }
+                    40% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes ani3 {
+                    40% {
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    60% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes ani4 {
+                    60% {
+                        opacity: 0;
+                    }
+                    70% {
+                        opacity: 1;
+                    }
+                    80% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes ani5 {
+                    80% {
+                        opacity: 0;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+
+
+
+
+                .vid {
+                
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                }
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                
+
+
+
+        
     </style>
 </head>
 <body>
     <div class="banner">
-        <div class="baner-text">
+        <div class="vid">
+            <video src="filmik.mp4" autoplay loop muted></video>
+        <div class="banner-text">
             <h2>Cat Mars</h2>
             <div class="text-wrapper">
-                <div class="box b1">Black</div>
-                <div class="box b2">Big</div>
-                <div class="box b3">Clever</div>
-                <div class="box b4">Nice</div>
-                <div class="box b5">Cool</div>
+                <div class="box b1">Where are you?</div>
+                <div class="box b2">I know you hear me Ksusha</div>
+                <div class="box b3">Come on!!!!!Miauuuu!!</div>
+                <div class="box b4">I am only cat</div>
+                <div class="box b5">So what for dinner today? </div>
+                </div>
             </div>
         </div>
     </div>
